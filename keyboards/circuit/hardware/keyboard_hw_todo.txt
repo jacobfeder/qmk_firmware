@@ -1,0 +1,10 @@
+- new USB-C
+- better USB routing
+- see if internal RC parts work with SW
+(- use xtal atmega32u4 part)?
+(- add xtal)?
+- pullup HWB, button / pad for manual pulldown
+- reset button / pad for pulldown
+- add ICSP header (sck, mosi, miso)
+- cherry switch PCB mount holes
+- mounting / clearance holes
