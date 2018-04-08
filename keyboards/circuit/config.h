@@ -25,8 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0xBABE
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Benjamin Shanahan and Jacob Feder
-#define PRODUCT         Circuit Keyboard
-#define DESCRIPTION     A sick keyboard
+#define PRODUCT         Circuit Mediaboard
+#define DESCRIPTION     6-key mediaboard
 
 /* USB bootloader options */
 // TODO? set these to esc key or something so we can exit bootloader
@@ -38,7 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS 3
 
 /* pin-out */
-#define MATRIX_ROW_PINS { B0, B1 }
+#define MATRIX_ROW_PINS { B1, B0 }
 #define MATRIX_COL_PINS { D0, D1, D2 }
 #define UNUSED_PINS
 
