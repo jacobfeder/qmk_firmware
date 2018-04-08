@@ -33,6 +33,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define QMK_ESC_OUTPUT D0 // usually COL
 // #define QMK_ESC_INPUT B1 // usually ROW
 
+/* Modify bootmagic keycodes so that we can enter the bootloader. */
+#define BOOTMAGIC_KEY_SALT       KC_VOLD
+#define BOOTMAGIC_KEY_BOOTLOADER KC_VOLU
+
 /* key matrix size */
 #define MATRIX_ROWS 2
 #define MATRIX_COLS 3

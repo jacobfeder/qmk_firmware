@@ -8,12 +8,12 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_MAIN] = KC_KEYMAP(
-      MPRV ,  MPLY ,  MNXT,
-      FN   ,  VOLD ,  VOLU
+      FN   ,  VOLD ,  VOLU,
+      MPRV ,  MPLY ,  MNXT
   ),
 
   [_FN] = KC_KEYMAP(
-            ,    ,        ,
-            ,  B ,  SPACE
+             ,  UP   ,        ,
+        LEFT ,  DOWN ,  RIGHT
   )
 };
