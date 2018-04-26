@@ -25,8 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0xBABE
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Benjamin Shanahan and Jacob Feder
-#define PRODUCT         Circuit Mediaboard
-#define DESCRIPTION     6-key mediaboard
+#define PRODUCT         Circuit Keyboard
+#define DESCRIPTION     Compact keyboard with arrow keys.
 
 /* USB bootloader options */
 // TODO? set these to esc key or something so we can exit bootloader
@@ -34,29 +34,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define QMK_ESC_INPUT B1 // usually ROW
 
 /* Modify bootmagic keycodes so that we can enter the bootloader. */
-#define BOOTMAGIC_KEY_SALT       KC_VOLD
-#define BOOTMAGIC_KEY_BOOTLOADER KC_VOLU
+#define BOOTMAGIC_KEY_SALT       KC_SPACE
+#define BOOTMAGIC_KEY_BOOTLOADER KC_B
 
 /* key matrix size */
-#define MATRIX_ROWS 2
-#define MATRIX_COLS 3
+#define MATRIX_ROWS 5
+#define MATRIX_COLS 15
 
 /* pin-out */
-#define MATRIX_ROW_PINS { B1, B0 }
-#define MATRIX_COL_PINS { D0, D1, D2 }
+#define MATRIX_ROW_PINS { B0, B1, B2, B3, B4 }
+#define MATRIX_COL_PINS { D0, D1, D2, D3, D4, D5, D6, D7, F0, F1, F2, F3, F4, F5, F6 }
 #define UNUSED_PINS
-
-/* ws2812 RGB LED */
-#define RGB_DI_PIN F7
-#define RGBLIGHT_TIMER
-#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 6    // Number of LEDs
-#define ws2812_PORTREG  PORTD
-#define ws2812_DDRREG   DDRD
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
 #define TAPPING_TERM 200
+
+/* ws2812 RGB LED */
+#define RGBLIGHT_TIMER
+#define RGBLIGHT_ANIMATIONS
+#define RGB_DI_PIN          F7
+#define RGBLED_NUM          6    // Number of LEDs
+#define ws2812_PORTREG      PORTD
+#define ws2812_DDRREG       DDRD
 
 #endif
