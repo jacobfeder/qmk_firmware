@@ -28,11 +28,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT         Circuit Keyboard
 #define DESCRIPTION     Compact keyboard with arrow keys.
 
-/* USB bootloader options */
-// TODO? set these to esc key or something so we can exit bootloader
-// #define QMK_ESC_OUTPUT D0 // usually COL
-// #define QMK_ESC_INPUT B1 // usually ROW
-
 /* Modify bootmagic keycodes so that we can enter the bootloader. */
 #define BOOTMAGIC_KEY_SALT       KC_SPACE
 #define BOOTMAGIC_KEY_BOOTLOADER KC_B
@@ -50,13 +45,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 #define TAPPING_TERM 200
-
-/* ws2812 RGB LED */
-#define RGBLIGHT_TIMER
-#define RGBLIGHT_ANIMATIONS
-#define RGB_DI_PIN          F7
-#define RGBLED_NUM          6    // Number of LEDs
-#define ws2812_PORTREG      PORTD
-#define ws2812_DDRREG       DDRD
 
 #endif

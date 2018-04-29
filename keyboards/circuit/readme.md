@@ -3,6 +3,11 @@
 	make circuit:default:dfu
 
 
+By default Make uses `sh` instead of `bash` for its shell commands. To use bash, call Make like so:
+
+    $ make circuit:default SHELL=/bin/bash
+
+
 Raw data (keyboard-layout-editor.com):
 
 [{c:"#f67f00",t:"#1a1a1a",a:7},"esc",{c:"#d0ccc0",t:"#000000",a:5},"!\n1","@\n2","#\n3","$\n4","%\n5","^\n6","&\n7","*\n8","(\n9",{a:4,fa:[0,0,0,1]},")\n0\n\n/F10",{c:"#96938e"},"_\n-\n\n/F11","+\n=\n\n/F12",{a:5},"|\n\\","~\n`"],
