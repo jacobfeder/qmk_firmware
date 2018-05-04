@@ -2342,7 +2342,7 @@ design rules under a new name.
 <wire x1="157.25" y1="-35.5" x2="162.8278" y2="-35.5" width="0.2032" layer="1"/>
 <wire x1="168.25" y1="-38.6959" x2="168.25" y2="-35.25" width="0.2032" layer="16"/>
 </signal>
-<signal name="MISO">
+<signal name="N$8">
 <contactref element="IC1" pad="11"/>
 <contactref element="ICSP" pad="5"/>
 <wire x1="153.25" y1="-34.6857" x2="153.25" y2="-36.25" width="0.2032" layer="16"/>
@@ -2352,7 +2352,7 @@ design rules under a new name.
 <wire x1="162.8822" y1="-34.25" x2="163.3222" y2="-33.81" width="0.2032" layer="1"/>
 <wire x1="155.25" y1="-34.25" x2="162.8822" y2="-34.25" width="0.2032" layer="1"/>
 </signal>
-<signal name="MOSI">
+<signal name="N$12">
 <contactref element="IC1" pad="10"/>
 <contactref element="ICSP" pad="4"/>
 <wire x1="152.45" y1="-34.6857" x2="152.45" y2="-36.05" width="0.2032" layer="16"/>
@@ -2364,7 +2364,7 @@ design rules under a new name.
 <wire x1="162.98" y1="-31.27" x2="163.6778" y2="-31.27" width="0.2032" layer="1"/>
 <wire x1="160.3556" y1="-33.8944" x2="162.98" y2="-31.27" width="0.2032" layer="1"/>
 </signal>
-<signal name="SCK">
+<signal name="N$13">
 <contactref element="IC1" pad="9"/>
 <contactref element="ICSP" pad="3"/>
 <wire x1="151.65" y1="-34.6857" x2="151.65" y2="-35.85" width="0.2032" layer="16"/>
