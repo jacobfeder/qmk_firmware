@@ -4,7 +4,6 @@
 #define _SHIFT          1  // shift layer
 #define _FN             2  // function layer
 
-#define TAPPING_TOGGLE  2                 // set tap-toggle to trigger after 2 taps
 #define KC_TERM         LCTL(LALT(KC_T))  // open terminal on Linux (Ctrl+Alt+T)
 #define KC_FN           TT(_FN)           // tapping toggle (multiple tags will toggle the layer on / off instead of momentary on)
 
@@ -48,6 +47,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
         NO,    NO,    UP  ,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    MPLY,  MPRV,  MNXT,         DEL,
         CAPS,  LEFT,  DOWN,  RGHT,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,                  NO,  
         NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,                         NO,  
-        TRNS,  TRNS,  TRNS,  NO,                                              TRNS,  NO,    NO,    NO,    NO
+        TRNS,  TRNS,  TRNS,  NO,                                              TRNS,  HOME,  PGUP,  PGDN,  END
     )
 };
