@@ -3,9 +3,12 @@
 	make circuit:default:dfu
 
 
-By default Make uses `sh` instead of `bash` for its shell commands. To use bash, call Make like so:
+By default Make uses `sh` instead of `bash` for its shell commands. If you are running into strange errors, try using bash instead by calling Make like so:
 
     $ make circuit:default SHELL=/bin/bash
+
+Also, if you get an error that says "bootloader not found" or "device not found", try running the above Make command with ``sudo``.
+
 
 
 Raw data (keyboard-layout-editor.com):
