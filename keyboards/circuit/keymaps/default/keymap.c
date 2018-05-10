@@ -5,8 +5,9 @@
 #define _FN             2  // function layer
 
 #define KC_TERM         LCTL(LALT(KC_T))    // open terminal on Linux (Ctrl+Alt+T)
-#define KC_KILL         LALT(KC_F4)         // Alt+F4
+#define KC_KILL         LALT(KC_F4)         // Alt+F4 (close window)
 #define KC_CAD          LCTL(LALT(KC_DEL))  // Ctrl+Alt+Delete
+#define KC_LOCK         LCTL(LALT(KC_L))    // Ctrl+Alt+L (lock screen)
 #define KC_FN           TT(_FN)             // tapping toggle (multiple tags will toggle the layer on / off instead of momentary on)
 
 /*  For a list of available keycodes, please see:
@@ -47,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
     [ _FN ] = KC_KEYMAP(
         TRNS,  F1,    F2,    F3,    F4,    F5,    F6,    F7,    F8,    F9,    F10 ,  F11 ,  F12 ,  VOLD,  VOLU,
         NO,    NO,    UP  ,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    MPLY,  MPRV,  MNXT,         DEL,
-        CAPS,  LEFT,  DOWN,  RGHT,  NO,    NO,    NO,    NO,    KILL,  NO,    NO,    NO,                  ENT,  
+        CAPS,  LEFT,  DOWN,  RGHT,  NO,    NO,    NO,    NO,    KILL,  LOCK,  NO,    NO,                  ENT,  
         NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    CAD,                        NO,  
         TRNS,  TRNS,  TRNS,  NO,                                              TRNS,  HOME,  PGUP,  PGDN,  END
     )
