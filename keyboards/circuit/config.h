@@ -44,7 +44,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-#define TAPPING_TOGGLE    2  // set tap-toggle to trigger after 2 taps
-#define TAPPING_TERM    200
-
 #endif
