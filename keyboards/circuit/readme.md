@@ -1,10 +1,15 @@
 - to program using ICSP run `avrdude_prog_icsp.sh ../../circuit_default_production.hex` in 'keyboards/circuit' directory with arduino as ICSP
 - to program after uploading QMK firmware, start in bootloader mode using BOOTMAGIC by holding down SPACE+B during boot (2-3 sec) then run:
-```$ make circuit:default:dfu```
+
+```shell
+$ make circuit:default:dfu
+```
 
 By default Make uses `sh` instead of `bash` for its shell commands. If you are running into strange errors, try using bash instead by calling Make like so:
 
-```$ make circuit:default SHELL=/bin/bash```
+```shell
+$ make circuit:default SHELL=/bin/bash
+```
 
 Also, if you get an error that says "bootloader not found" or "device not found", try running the above Make command with ``sudo``.
 
