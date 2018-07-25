@@ -1,9 +1,26 @@
-- to program using ICSP run `avrdude_prog_icsp.sh ../../circuit_default_production.hex` in 'keyboards/circuit' directory with arduino as ICSP
-- to program after uploading QMK firmware, start in bootloader mode using BOOTMAGIC by holding down SPACE+B during boot (2-3 sec) then run:
+cd to qmk_firmware directory.
+
+Install dependencies using script in util/install_dependencies.sh
+
+```shell
+$ sudo util/install_dependencies.sh
+```
+
+To program, start keyboard in bootloader mode using BOOTMAGIC by holding down SPACE+B during boot (2-3 sec) then run the following command from the qmk_firmware top level directory (use an on-screen keyboard to press enter key for you to run this command):
 
 ```shell
 $ make circuit:default:dfu
 ```
+
+Make your own custom layout by duplicating the "default" folder in keyboards/circuit and modifying as necessary. Flash it to your keyboard by running:
+
+```shell
+$ make circuit:<your layout name>:dfu
+```
+
+
+
+Troubleshooting:
 
 By default Make uses `sh` instead of `bash` for its shell commands. If you are running into strange errors, try using bash instead by calling Make like so:
 
@@ -13,7 +30,7 @@ $ make circuit:default SHELL=/bin/bash
 
 Also, if you get an error that says "bootloader not found" or "device not found", try running the above Make command with ``sudo``.
 
-
+To program using ICSP run `avrdude_prog_icsp.sh ../../circuit_default_production.hex` in 'keyboards/circuit' directory with arduino as ICSP.
 
 Raw data (keyboard-layout-editor.com):
 
