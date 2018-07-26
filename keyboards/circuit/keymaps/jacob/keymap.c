@@ -47,9 +47,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
        */
     [ _FN ] = KC_KEYMAP(
         TRNS,  F1,    F2,    F3,    F4,    F5,    F6,    F7,    F8,    F9,    F10 ,  F11 ,  F12 ,  VOLD,  VOLU,
-        NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    MPLY,  MPRV,  MNXT,         DEL,
+        NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    MPLY,  VOLD,  VOLU,         DEL,
         CAPS,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    KILL,  NO,    NO,    NO,                  ENT,  
-        TRNS,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    CAD,                        TRNS,  
+        TRNS,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    MPRV,  MNXT,  MPLY,                        TRNS,  
         TRNS,  TRNS,  TRNS,  CALC,                                            TRNS,  HOME,  PGUP,  PGDN,  END
     )
 };
