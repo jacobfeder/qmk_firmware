@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
         TAB,   Q,     W,     E,     R,     T,     Y,     U,     I,     O,     P,     LBRC,  RBRC,         BSPC,
         TERM,  A,     S,     D,     F,     G,     H,     J,     K,     L,     SCLN,  QUOT,                ENT,
         LSFT,  Z,     X,     C,     V,     B,     N,     M,     COMM,  DOT,   SLSH,                       RSFT,
-        LCTL,  LGUI,  LALT,  SPC,                                               FN,  LEFT,  UP,    DOWN,  RGHT
+        LCTL,  LGUI,  LALT,  SPC,                                               FN,  LEFT,  DOWN,    UP,  RGHT
     ),
 
     /*  This is the function layer. You reach it by holding the FN (function) 
@@ -50,6 +50,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
         NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    MPLY,  MPRV,  MNXT,         DEL,
         CAPS,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    KILL,  NO,    NO,    NO,                  ENT,  
         TRNS,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    CAD,                        TRNS,  
-        TRNS,  TRNS,  TRNS,  CALC,                                            TRNS,  HOME,  PGUP,  PGDN,  END
+        TRNS,  TRNS,  TRNS,  CALC,                                            TRNS,  HOME,  PGDN,  PGUP,  END
     )
 };
