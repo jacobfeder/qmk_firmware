@@ -3,7 +3,7 @@ cd to qmk_firmware directory.
 Install dependencies using script in util/install_dependencies.sh
 
 ```shell
-$ sudo util/install_dependencies.sh
+$ sudo util/<your os>_install.sh
 ```
 
 To program, start keyboard in bootloader mode using BOOTMAGIC by holding down SPACE+B during boot (2-3 sec) then run the following command from the qmk_firmware top level directory (use an on-screen keyboard to press enter key for you to run this command):
