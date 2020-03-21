@@ -46,10 +46,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
             ``TRNS`` (transparent).
        */
     [ _FN ] = KC_KEYMAP(
-        TRNS,  F1,    F2,    F3,    F4,    F5,    F6,    F7,    F8,    F9,    F10 ,  F11 ,  F12 ,  VOLD,  VOLU,
+        TRNS,  F1,    F2,    F3,    F4,    F5,    F6,    F7,    F8,    F9,    F10 ,  F11 ,  F12 ,   F13,  F14,
         NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    NO,    MPLY,  VOLD,  VOLU,         DEL,
         CAPS,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    KILL,  NO,    NO,    NO,                  ENT,  
-        TRNS,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    MPRV,  MNXT,  MPLY,                        TRNS,  
-        TRNS,  TRNS,  TRNS,  CALC,                                            TRNS,  HOME,  PGUP,  PGDN,  END
+        TRNS,  NO,    NO,    NO,    NO,    NO,    NO,    NO,    MPRV,  MNXT,  MPLY,                      TRNS,  
+        TRNS,  TRNS,  TRNS,  NO,                                              TRNS,  HOME,  PGUP,  PGDN,  END
     )
 };
